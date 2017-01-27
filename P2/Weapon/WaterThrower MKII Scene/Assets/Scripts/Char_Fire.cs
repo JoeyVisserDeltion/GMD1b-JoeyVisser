@@ -5,6 +5,8 @@ public class Char_Fire : MonoBehaviour {
 
     // Particles Variable
     public ParticleSystem particles;
+    public int ammunitionTwo;
+    public Class_Ammo ammoScriptTwo;
 
     // Shoots Particles on Fire
     void Update()
@@ -12,6 +14,7 @@ public class Char_Fire : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
         {
             particles.Play();
+            ammoScriptTwo.ChangeAmmoTwo(ammunitionTwo);
         }
         if (Input.GetButtonUp("Fire1"))
         {
