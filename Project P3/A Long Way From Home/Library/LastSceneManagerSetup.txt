@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/A Long Way From Home.unity
+  isLoaded: 1
+  isActive: 1
