@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
 
+    //Item currently being manipulated
     public Item activeItem;
 }

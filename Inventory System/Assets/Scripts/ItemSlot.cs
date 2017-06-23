@@ -5,16 +5,19 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour {
 
+    //Item manipulation variables
     public Item item;
     public Item itemHolder;
     public Image image;
     public Inventory inventory;
 
+    //Find the actual inventory Canvas
     void Awake()
     {
         inventory = GameObject.Find("Inventory").GetComponent<Inventory>();
     }
 
+    //Enable image if there is an item
     void Update()
     {
         if(item != null)
@@ -24,6 +27,7 @@ public class ItemSlot : MonoBehaviour {
         }
     }
 
+    //Pick up and drop items within the inventory
     void OnClick()
     {
         if(item == null)
